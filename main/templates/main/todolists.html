@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Lists{% endblock %}
+
+{% block content %}
+<div class="list-group">
+	{% for li in ls %}
+	 	<a href="/{{li.id}}", class="list-group-item list-group-item-action">{{li}}</a>
+	{% endfor %}
+</div>
+{% endblock %} 
